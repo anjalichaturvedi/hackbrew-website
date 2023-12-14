@@ -291,3 +291,69 @@ button:hover {
 }
 } 
 
+@media only screen and (max-width: 700px) 
+ {
+      body {
+        margin: 0;
+        height: 100%;
+        overflow-x: hidden;
+      }
+      .content {
+        margin-left: 50px;
+      }
+      .content h1 {
+        font-size: 3em;
+      }
+      .headerimg img {
+        width: 350px;
+        height: 350px;
+        margin-top: 20px;
+        margin-left: 50px;
+      }
+      .intro {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .counter {
+        font-size: 25px;
+      }
+      .themes {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      .card {
+        margin-left: 50px !important;
+      }
+      .faq {
+        margin-left: 50px !important;
+        margin-right: 50px;
+      }
+
+      .accordion {
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      .bottom {
+        height: 200px;
+        padding: 10px;
+        padding-bottom: 20px;
+      }
+
+    .bottomImg img {
+        visibility: hidden;
+    }
+    
+    .bottom h1 {
+        margin-top: 20px;
+    }
+
+    .emp {
+      margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) 
+{
+  
+}
