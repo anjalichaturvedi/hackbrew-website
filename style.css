@@ -238,220 +238,76 @@ button:hover {
   color: #141414;
 }
 
-/* Mobile devices (portrait and landscape) */
-@media only screen and (max-width: 767px) {
-  body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-  }
+/* Small screens (Mobile) */
+@media only screen and (max-width: 576px) {
+ 
 
-  .header {
-    margin-top: 50px; /* Adjust spacing for header on smaller screens */
-  }
 
-  .content {
-    margin-left: 20px; /* Adjust content margin for smaller screens */
-  }
-
-  .intro {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .spacer {
-    height: 10vh; /* Reduce spacer height for smaller screens */
-  }
-
-  .timer {
-    width: 80%; /* Adjust timer width for smaller screens */
-  }
-
-  .bottom {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .bottom h1 {
-    margin-top: 20px; /* Adjust bottom section header margin for smaller screens */
-  }
-
-  .bottomImg img {
-    width: 100%; /* Make bottom image responsive */
-  }
-
-  .accordion-item,
-  .accordion-button,
-  .card {
-    width: 90%; /* Adjust width of accordion items and cards for smaller screens */
-    margin: 0 auto; /* Center accordion items and cards on smaller screens */
-  }
 }
 
-/* Tablets (portrait and landscape) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+/* Medium screens (Tablets) */
+@media only screen and (min-width: 577px) and (max-width: 767px) {
   }
 
-  .header {
-    margin-top: 70px; /* Adjust spacing for header on tablet screens */
-  }
-
-  .content {
-    margin-left: 50px; /* Adjust content margin for tablet screens */
-  }
-
-  .intro {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .spacer {
-    height: 15vh; /* Adjust spacer height for tablet screens */
-  }
-
-  .timer {
-    width: 60%; /* Adjust timer width for tablet screens */
-  }
-
-  .bottom {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-  .bottom h1 {
-    margin-top: 30px; /* Adjust bottom section header margin for tablet screens */
-  }
-
-  .bottomImg img {
-    width: 100%; /* Make bottom image responsive */
-  }
-
-  .accordion-item,
-  .accordion-button,
-  .card {
-    width: 80%; /* Adjust width of accordion items and cards for tablet screens */
-    margin: 0 auto; /* Center accordion items and cards on tablet screens */
-  }
-}
-
-/* Media Query for Small Devices (Mobile Phones) */
-@media only screen and (max-width: 600px) {
+/* Large screens (Larger tablets and small desktops) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
   body {
     overflow-x: hidden;
   }
 
-  .header {
-    margin-top: 50px;
-  }
-
   .content {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 40px;
   }
-
+  .content h1 {
+    font-size: 3em;
+  }
   .spacer {
-    height: 10vh;
+    height: 150px;
+  }
+  .row-cols-1 {
+    margin-left: 50px !important;
   }
 
-  .intro {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .themes {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .timer {
-    width: auto;
-    padding: 10px;
+  .bottomImg {
+    visibility: hidden;
   }
 
   .bottom {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-
-  .bottom h1,
-  .bottom h5 {
-    margin-top: 20px;
-  }
-
-  .bottomImg img {
-    width: 100%;
-  }
-
-  .footer-links {
-    font-size: 14px;
-  }
-
-  .accordion-button {
-    font-size: 14px;
-  }
-
-  .card {
-    margin-bottom: 20px;
+    height: 240px;
   }
 }
 
-/* Media Query for Medium Devices (Tablets) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-  body {
-    overflow-x: hidden;
-  }
+/* Extra-large screens (Desktops and larger screens) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Your styles for extra-large screens go here */
+}
 
-  .header {
-    margin-top: 80px;
-  }
+/* Wide screens (Large desktops) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  /* Your styles for wide screens go here */
+}
 
-  .content {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+/* Extra-wide screens (Extra-large desktops) */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+  /* Your styles for extra-wide screens go here */
+}
 
-  .spacer {
-    height: 15vh;
-  }
+/* Full HD screens (Full HD and larger) */
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+  /* Your styles for full HD screens go here */
+}
 
-  .intro {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+/* 2K and 4K screens (2K and 4K displays) */
+@media only screen and (min-width: 1920px) and (max-width: 3839px) {
+  /* Your styles for 2K and 4K screens go here */
+}
 
-  .themes {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
+/* 5K and 8K screens (5K and 8K displays) */
+@media only screen and (min-width: 3840px) and (max-width: 7679px) {
+  /* Your styles for 5K and 8K screens go here */
+}
 
-  .timer {
-    width: auto;
-    padding: 15px;
-  }
-
-  .bottom {
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  .bottom h1,
-  .bottom h5 {
-    margin-top: 30px;
-  }
-
-  .bottomImg img {
-    width: 80%;
-  }
-
-  .footer-links {
-    font-size: 16px;
-  }
-
-  .accordion-button {
-    font-size: 16px;
-  }
-
-  .card {
-    margin-bottom: 30px;
-  }
+/* Ultra-high resolution screens (7680px and above) */
+@media only screen and (min-width: 7680px) {
+  /* Your styles for ultra-high resolution screens go here */
 }
