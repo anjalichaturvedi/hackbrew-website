@@ -1,0 +1,70 @@
+body {
+    background-color: #141414;
+    font-family: 'Inter', sans-serif;
+    color: whitesmoke;
+}
+
+.header {
+    margin-top: 100px;
+}
+
+.content {
+    margin-left: 100px;
+}
+
+.content h5 {
+    color: #e5e5e5;
+    font-weight: 300;
+}
+
+.content h1 {
+    font-size: 4em;
+}
+
+
+.timer {
+     text-align: center;
+     padding: 20px;
+      width: 350px;
+      height: auto;
+      background-color: rgba(36, 33, 33, 0.7); /* Blurred background color */
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: timer 0.6s both;
+    
+}
+
+ @keyframes timer {
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+  
+.spacer {
+    height: 20vh;
+}
+
+.intro {
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.intro p {
+    font-weight: 300;
+}
+
+.intro h4 {
+    font-size: 30px;
+}
+
+.themes h6 {
+    margin-top: 20px;
+    font-weight: 400;
+}
