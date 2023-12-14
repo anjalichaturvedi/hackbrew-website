@@ -81,8 +81,8 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 .bottomImg img {
     width: 400px;
@@ -96,6 +96,10 @@ body {
     font-weight: 300;
 }
 
+.faq {
+  margin-left: 150px;
+  margin-right: 150px;
+}
 
 .bounce {
   animation: bounce 2s ease infinite;
@@ -234,126 +238,220 @@ button:hover {
   color: #141414;
 }
 
-@media only screen and (max-width: 600px) {
+/* Mobile devices (portrait and landscape) */
+@media only screen and (max-width: 767px) {
   body {
-    margin: 0;
-    height: 100%;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
   }
+
+  .header {
+    margin-top: 50px; /* Adjust spacing for header on smaller screens */
+  }
+
   .content {
-    margin-left: 50px;
+    margin-left: 20px; /* Adjust content margin for smaller screens */
   }
-  .content h1 {
-    font-size: 3em;
+
+  .intro {
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  .headerimg img {
-    width: 350px;
-    height: 350px;
-    margin-top: 20px;
-    margin-left: 50px;
+
+  .spacer {
+    height: 10vh; /* Reduce spacer height for smaller screens */
   }
+
+  .timer {
+    width: 80%; /* Adjust timer width for smaller screens */
+  }
+
+  .bottom {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bottom h1 {
+    margin-top: 20px; /* Adjust bottom section header margin for smaller screens */
+  }
+
+  .bottomImg img {
+    width: 100%; /* Make bottom image responsive */
+  }
+
+  .accordion-item,
+  .accordion-button,
+  .card {
+    width: 90%; /* Adjust width of accordion items and cards for smaller screens */
+    margin: 0 auto; /* Center accordion items and cards on smaller screens */
+  }
+}
+
+/* Tablets (portrait and landscape) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
+  .header {
+    margin-top: 70px; /* Adjust spacing for header on tablet screens */
+  }
+
+  .content {
+    margin-left: 50px; /* Adjust content margin for tablet screens */
+  }
+
   .intro {
     margin-left: 50px;
     margin-right: 50px;
   }
-  .counter {
-    font-size: 25px;
+
+  .spacer {
+    height: 15vh; /* Adjust spacer height for tablet screens */
   }
-  .themes {
+
+  .timer {
+    width: 60%; /* Adjust timer width for tablet screens */
+  }
+
+  .bottom {
     margin-left: 50px;
     margin-right: 50px;
   }
-  .row-cols-md-2 {
-    margin-left: 0px !important;
+
+  .bottom h1 {
+    margin-top: 30px; /* Adjust bottom section header margin for tablet screens */
   }
-  .accordion {
+
+  .bottomImg img {
+    width: 100%; /* Make bottom image responsive */
+  }
+
+  .accordion-item,
+  .accordion-button,
+  .card {
+    width: 80%; /* Adjust width of accordion items and cards for tablet screens */
+    margin: 0 auto; /* Center accordion items and cards on tablet screens */
+  }
+}
+
+/* Media Query for Small Devices (Mobile Phones) */
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header {
+    margin-top: 50px;
+  }
+
+  .content {
     margin-left: 20px;
     margin-right: 20px;
   }
-  .bottom {
-    height: 200px;
-    padding: 10px;
-    padding-bottom: 20px;
+
+  .spacer {
+    height: 10vh;
   }
-.bottomImg img {
-    visibility: hidden;
-}
 
-.bottom h1 {
+  .intro {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .themes {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .timer {
+    width: auto;
+    padding: 10px;
+  }
+
+  .bottom {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bottom h1,
+  .bottom h5 {
     margin-top: 20px;
+  }
+
+  .bottomImg img {
+    width: 100%;
+  }
+
+  .footer-links {
+    font-size: 14px;
+  }
+
+  .accordion-button {
+    font-size: 14px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
 }
 
-.bottom h5 {
-    font-weight: 300;
-}
-.emp {
-  margin-left: 30px;
-}
-} 
+/* Media Query for Medium Devices (Tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
 
-@media only screen and (max-width: 700px) 
- {
-      body {
-        margin: 0;
-        height: 100%;
-        overflow-x: hidden;
-      }
-      .content {
-        margin-left: 50px;
-      }
-      .content h1 {
-        font-size: 3em;
-      }
-      .headerimg img {
-        width: 350px;
-        height: 350px;
-        margin-top: 20px;
-        margin-left: 50px;
-      }
-      .intro {
-        margin-left: 50px;
-        margin-right: 50px;
-      }
-      .counter {
-        font-size: 25px;
-      }
-      .themes {
-        margin-left: 50px;
-        margin-right: 50px;
-      }
-      .card {
-        margin-left: 50px !important;
-      }
-      .faq {
-        margin-left: 50px !important;
-        margin-right: 50px;
-      }
+  .header {
+    margin-top: 80px;
+  }
 
-      .accordion {
-        margin-left: 0px;
-        margin-right: 0px;
-      }
+  .content {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
-      .bottom {
-        height: 200px;
-        padding: 10px;
-        padding-bottom: 20px;
-      }
+  .spacer {
+    height: 15vh;
+  }
 
-    .bottomImg img {
-        visibility: hidden;
-    }
-    
-    .bottom h1 {
-        margin-top: 20px;
-    }
+  .intro {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
-    .emp {
-      margin-left: 30px;
-    }
-}
+  .themes {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 
-@media only screen and (max-width: 800px) 
-{
-  
+  .timer {
+    width: auto;
+    padding: 15px;
+  }
+
+  .bottom {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .bottom h1,
+  .bottom h5 {
+    margin-top: 30px;
+  }
+
+  .bottomImg img {
+    width: 80%;
+  }
+
+  .footer-links {
+    font-size: 16px;
+  }
+
+  .accordion-button {
+    font-size: 16px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
 }
