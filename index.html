@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <title>Hack Brew</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></head>
-<body >
+<body>
   <nav class="navbar bg-transparent  ">
     <div class="container">
       <a class="navbar-brand" href="#">
@@ -16,11 +21,11 @@
       </a>
       <ul class="nav nav-underline">
         <li class="nav-item">
-          <a class="link-light link-offset-2 nav-link" href="#">About</a>
+          <a class="link-light link-offset-2 nav-link" href="#about">About</a>
         </li>
         <br>
         <li class="nav-item">
-          <a class="link-light link-offset-2 nav-link" href="#">FAQ</a>
+          <a class="link-light link-offset-2 nav-link" href="#faq">FAQ</a>
         </li>
         <br>
         <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -29,7 +34,7 @@
       </ul>
     </div>
   </nav>
-  <div class="header"> 
+  <div class="header reveal fade-bottom"> 
     <div class="container">
       <div class="row">
         <div class="col content">
@@ -69,7 +74,7 @@
 </div>
 <div class="spacer"></div>
 <div class="d-flex justify-content-center">
-  <div class="intro">
+  <div class="intro reveal fade-bottom" id="about">
       <h1>{ The Story behind Hack Brew }</h1>
       <br>
       <p style="text-wrap: wrap;">At Nodebrew, our journey began with a mission - to craft an inclusive space in tech. Our bi-yearly hackathons, including the celebrated Hack Wizard, have made their mark as India's largest all-women hackathon, empowering talented female coders. With three hackathons and workshops spanning 46 countries, we've reached over 70,000 individuals. Our focus: bridge the gender gap, drive innovation, and revolutionize the tech landscape globally. <br> <br> And now, we're thrilled to bring our exciting hackathon, 'Hack Brew,' right to you. We're here to create an inclusive tech haven where innovation thrives. Join us and let's make it a memorable journey together - here's to a fantastic time ahead!</p>
@@ -77,19 +82,21 @@
       <br>
       <div class="row">
         <div class="col">
-          <h4>70000+</h4>
+          <h4><div class="counter" id="counter4">0</div>
+           </h4>
           <h6>super-humans impacted</h6>
         </div>
         <div class="col">
-          <h4>1600+</h4>
+          <h4><div class="counter" id="counter1">0</div></h4>
           <h6>registrations</h6>
         </div>
         <div class="col">
-          <h4>46</h4>
+          <h4><div class="counter" id="counter2">0</div>
+          </h4>
           <h6>countries we've reached</h6>
         </div>
         <div class="col">
-          <h4>19</h4>
+          <h4><div class="counter" id="counter3">0</div></h4>
           <h6>previous sponsors</h6>
         </div>
       </div>
@@ -97,7 +104,7 @@
 </div>
 <div class="spacer"></div>
 <div class="d-flex justify-content-center">
-<div class="themes">
+<div class="themes reveal fade-bottom">
   <h1 style="text-align: center;">{ Fueling Innovation and Creativity }</h1>
   <h6 style="text-align: center;">Foster innovation, solve real-world problems, and spark collaboration with our <br> diverse hackathon theme repository.</h6>
   <br> <br>
@@ -142,7 +149,7 @@
 </div>
 </div>
 <div class="spacer"></div>
-<div class="faq">
+<div class="faq reveal fade-bottom" id="faq">
   <h1 style="text-align: center;">{ Frequently Asked Questions }</h1> <br>
   <div class="container">
     <div class="row">
@@ -150,11 +157,11 @@
         <div class="accordion" id="accordionPanelsStayOpenExample">
           <div class="accordion-item">
             <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFirst" aria-expanded="false" aria-controls="panelsStayOpen-collapseFirst">
                 1. What is a hackathon?
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div id="panelsStayOpen-collapseFirst" class="accordion-collapse collapse">
               <div class="accordion-body">
                 A hackathon is an event where individuals or teams come together to solve problems using technology within a limited timeframe, typically 24-48 hours.
               </div>
@@ -163,50 +170,212 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
+                2. Who can participate?
               </button>
             </h2>
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
+                Our hackathon is exclusively for women and individuals who identify as women.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+              3. Is there a registration fee to participate in this hackathon?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              No, nil, nada. The event is completely and entirely free.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+            4. Are participants from all countries welcome?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            Yes, we welcome participants from around the world. This hackathon is open to international participants.
+          </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          5. Can I participate individually, or do I need to be part of a team?
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+        <div class="accordion-body">
+          You can participate individually, but forming or joining a team is encouraged for collaborative problem-solving. Teams typically consist of 2-5 members.
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+              6. How can I find or join a team for the hackathon?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              We provide a platform where you can find team members or express your interest in joining a team. More details will be provided upon registration.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+              7. When and where will the hackathon take place?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              This is a virtual hackathon, and it will take place entirely online.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+              8. What are the prizes and awards for this hackathon?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              We usually offer a range of prizes, including cash awards, mentorship opportunities, and more. Prizes will be revealed as we move close to the event.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+              9. Is there a code of conduct for this event?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Yes, we have a code of conduct in place to ensure a respectful and inclusive environment for all participants. Please familiarize yourself with it before the event.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+              10. How do I report any issues or concerns during the hackathon?
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              If you encounter any issues or have concerns, please contact our organizers at anjali@nodebrew.tech.
             </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="accordion" id="accordionPanelsStayOpenExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-                Accordion Item #2
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-                Accordion Item #3
-              </button>
-            </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-              </div>
-            </div>
+    </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="bottom reveal fade-bottom">
+    <div class="bottomBox">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h1>
+            Empowering Diversity
+          </h1>
+          <h5>
+            One hackathon, at a time
+          </h5>
+          <br>
+          <button class="btn btn-outline-light " type="button">Register</button>
+        </div>
+        <div class="col-sm">
+          <div class="bottomImg swing">
+            <img src="cover.png" alt="">
           </div>
         </div>
       </div>
     </div>
     </div>
-    </div>
+  </div>
+  <div class="spacer"></div>
+  <hr style="margin-left: 50px; margin-right: 50px;">
+  <footer class="bg-transparent text-white text-center text-lg-start">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">  
+          <p>
+            Nodebrew is a non-profit fiscal organisation backed by Hack+
+            <br> <br>
+            EIN: 81-154335
+          </p>
+        </div>
+        <!--Grid column-->
   
-</div>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="https://hackbrew2024-codeofconduct.tiiny.site" class="text-white">Code of Conduct</a>
+            </li>
+            <li>
+              <a href="mailto:anjali@nodebrew.tech" class="text-white">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="mailto:anjali@nodebrew.tech" class="text-white">Verification Letter</a>
+            </li>
+            <li>
+              <a href="mailto:hello@nodebrew.tech" class="text-white">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="wwww.instagrm.com/nodebreww" class="text-white">Instagram</a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/nodebrew/" class="text-white">LinkedIn</a>
+            </li>
+            <li>
+              <a href="https://github.com/nodebreww" class="text-white">GitHub</a>
+            </li>
+            <li>
+              <a href="https://wellfound.com/company/nodebrew" class="text-white">WellFound</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3">
+      2023-24  &copy;  Nodebrew
+    </div>
+    <!-- Copyright -->
+  </footer>
 <script>
   // Set the date we're counting down to
   var countDownDate = new Date("Feb 4, 2024 10:00:00").getTime();
@@ -239,6 +408,59 @@
       document.getElementById("days").innerHTML = "EXPIRED";
     }
   }, 1000);
+
+  function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
+
+let counts = setInterval(updated);
+        let upto = 0;
+        function updated() {
+            let count = document.getElementById("counter");
+            count.innerHTML = ++upto;
+            if (upto === 70000) {
+                clearInterval(counts);
+            }
+        }
+        // animate
+    function animateCounter(targetId, targetValue, duration) {
+    let startValue = 0;
+    const counterElement = document.getElementById(targetId);
+    const increment = targetValue / (duration / 16); // Assuming 60 frames per second
+
+    function updateCounter() {
+      startValue += increment;
+      counterElement.textContent = Math.round(startValue);
+
+      if (startValue < targetValue) {
+        requestAnimationFrame(updateCounter);
+      } else {
+        counterElement.textContent = targetValue;
+      }
+    }
+
+    updateCounter();
+  }
+
+  // Usage
+  animateCounter('counter1', 1600, 2000); // Counter 1 from 0 to 100 in 2000 milliseconds
+  animateCounter('counter2', 46, 2000); // Counter 2 from 0 to 500 in 1500 milliseconds
+  animateCounter('counter3', 19, 2000); // Counter 3 from 0 to 1000 in 2500 milliseconds
+  animateCounter('counter4', 70000, 2000);
   </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
