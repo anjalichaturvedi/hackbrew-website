@@ -515,6 +515,10 @@ body {
   .accordion-button:hover {
     color: #e5e5e5;
   }
+  
+  .accordion-button:active {
+    color: #141414;
+  }
 
   .accordion-button {
     background-color: rgba(36, 33, 33, 0.7);
