@@ -1,256 +1,349 @@
 body {
-    background-color: #141414;
-    font-family: 'Inter', sans-serif;
-    color: whitesmoke;
-    margin: 0;
-    height: 100%;
-    overflow-x: hidden;
+  background-color: #141414;
+  font-family: 'Inter', sans-serif;
+  color: whitesmoke;
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 .header {
-    margin-top: 100px;
+  margin-top: 100px;
 }
 
 .content {
-    margin-left: 100px;
+  margin-left: 100px;
 }
 
 .content h5 {
-    color: #e5e5e5;
-    font-weight: 300;
+  color: #e5e5e5;
+  font-weight: 300;
 }
 
 .content h1 {
-    font-size: 4em;
+  font-size: 4em;
 }
 
 .emp {
-  margin-left: 50px;
+margin-left: 50px;
 }
 
 .timer {
-     text-align: center;
-     padding: 20px;
-      width: 350px;
-      height: auto;
-      background-color: rgba(36, 33, 33, 0.7); /* Blurred background color */
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      animation: timer 0.6s both;
+   text-align: center;
+   padding: 20px;
+    width: 350px;
+    height: auto;
+    background-color: rgba(36, 33, 33, 0.7); /* Blurred background color */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: timer 0.6s both;
 }
 
- @keyframes timer {
-    0%,
-    50%,
-    100% {
-      opacity: 1;
-    }
-    25%,
-    75% {
-      opacity: 0;
-    }
+@keyframes timer {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
   }
-  
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
 .spacer {
-    height: 20vh;
+  height: 20vh;
 }
 
 .intro {
-    margin-left: 200px;
-    margin-right: 200px;
-    text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
 }
 
 .intro p {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .intro h4 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .themes h6 {
-    margin-top: 20px;
-    font-weight: 400;
+  margin-top: 20px;
+  font-weight: 400;
 }
 
 .bottom {
-    background-color: #292929; /* Blurred background color */
-    width: auto;
-    height: auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: 150px;
-    margin-right: 150px;
-}
-.bottomImg img {
-    width: 400px;
-}
-
-.bottom h1 {
-    margin-top: 30px;
-}
-
-.bottom h5 {
-    font-weight: 300;
-}
-
-.faq {
+  background-color: #292929; /* Blurred background color */
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-left: 150px;
   margin-right: 150px;
 }
+.bottomImg img {
+  width: 400px;
+}
+
+.bottom h1 {
+  margin-top: 30px;
+}
+
+.bottom h5 {
+  font-weight: 300;
+}
+
+.faq {
+margin-left: 150px;
+margin-right: 150px;
+}
 
 .bounce {
-  animation: bounce 2s ease infinite;
+animation: bounce 2s ease infinite;
 }
 @keyframes bounce {
-    70% { transform:translateY(0%); }
-    80% { transform:translateY(-10%); }
-    90% { transform:translateY(0%); }
-    95% { transform:translateY(-7%); }
-    97% { transform:translateY(0%); }
-    99% { transform:translateY(-3%); }
-    100% { transform:translateY(0); }
+  70% { transform:translateY(0%); }
+  80% { transform:translateY(-10%); }
+  90% { transform:translateY(0%); }
+  95% { transform:translateY(-7%); }
+  97% { transform:translateY(0%); }
+  99% { transform:translateY(-3%); }
+  100% { transform:translateY(0); }
 }
 
 
 .reveal {
-    position: relative;
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+.active.fade-bottom {
+  animation: fade-bottom 1s ease-in;
+}
+.active.fade-left {
+  animation: fade-left 1s ease-in;
+}
+.active.fade-right {
+  animation: fade-right 1s ease-in;
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(50px);
     opacity: 0;
   }
-  
-  .reveal.active {
+  100% {
+    transform: translateY(0);
     opacity: 1;
   }
-  .active.fade-bottom {
-    animation: fade-bottom 1s ease-in;
+}
+@keyframes fade-left {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0;
   }
-  .active.fade-left {
-    animation: fade-left 1s ease-in;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-  .active.fade-right {
-    animation: fade-right 1s ease-in;
-  }
-  @keyframes fade-bottom {
-    0% {
-      transform: translateY(50px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  @keyframes fade-left {
-    0% {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade-right {
-    0% {
-      transform: translateX(100px);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
+}
 
-  .bounce-in {
-    animation: bounce-in 3s ease infinite;
+@keyframes fade-right {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
   }
-  @keyframes bounce-in {
-    0% {
-      opacity: 0;
-      transform: scale(.3);
-    }
-    50% {
-      opacity: 1;
-      transform: scale(1.05);
-    }
-    70% { transform: scale(.9); }
-    100% { transform: scale(1); }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
 
-  .accordion-item  {
-    background-color: rgba(36, 33, 33, 0.7);
-    border: #141414;
-    color: white;
+.bounce-in {
+  animation: bounce-in 3s ease infinite;
+}
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(.3);
   }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% { transform: scale(.9); }
+  100% { transform: scale(1); }
+}
 
-  .accordion-button:hover {
-    color: #e5e5e5;
-  }
+.accordion-item  {
+  background-color: rgba(36, 33, 33, 0.7);
+  border: #141414;
+  color: white;
+}
 
-  .accordion-button:active {
-    color: #141414;
-  }
+.accordion-button:hover {
+  color: #e5e5e5;
+}
 
-  .accordion-button {
-    background-color: rgba(36, 33, 33, 0.7);
-    color: white;
-  }
+.accordion-button:active {
+  color: #141414;
+}
 
-  .card {
-    background-color: rgba(36, 33, 33, 0.7);
-    color: white;
-  }
+.accordion-button {
+  background-color: rgba(36, 33, 33, 0.7);
+  color: white;
+}
+
+.card {
+  background-color: rgba(36, 33, 33, 0.7);
+  color: white;
+}
 
 footer a {
-    text-decoration: none;
-    font-weight: 300;
+  text-decoration: none;
+  font-weight: 300;
 }
 
 footer a:hover {
-    text-decoration: underline;
-    transform: scaleX(1);
-  transform-origin: bottom left;
-  transition: transform 0.25s ease-out;
+  text-decoration: underline;
+  transform: scaleX(1);
+transform-origin: bottom left;
+transition: transform 0.25s ease-out;
 }
 
 footer h5 {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 .list-group { 
-  position: sticky; 
-  top: 10px; 
+position: sticky; 
+top: 10px; 
 } 
 
 a {
-  color: white;
-  text-decoration: none;
+color: white;
+text-decoration: none;
 }
 
 a:hover {
-  color: #141414;
+color: #141414;
 }
 
 button:hover {
-  color: #141414;
+color: #141414;
 }
 
 /* Small screens (Mobile) */
 @media only screen and (max-width: 576px) {
- 
+
 
 
 }
 
 /* Medium screens (Tablets) */
 @media only screen and (min-width: 577px) and (max-width: 767px) {
-  }
+}
 
 /* Large screens (Larger tablets and small desktops) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+body {
+  overflow-x: hidden;
+}
+
+.content {
+  margin-left: 40px;
+}
+.content h1 {
+  font-size: 3em;
+}
+.spacer {
+  height: 150px;
+}
+.row-cols-1 {
+  margin-left: 50px !important;
+}
+
+.bottomImg {
+  visibility: hidden;
+}
+
+.bottom {
+  height: 240px;
+}
+}
+
+/* Extra-large screens (Desktops and larger screens) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/* Your styles for extra-large screens go here */
+}
+
+/* Wide screens (Large desktops) */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+/* Your styles for wide screens go here */
+}
+
+/* Extra-wide screens (Extra-large desktops) */
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+/* Your styles for extra-wide screens go here */
+}
+
+/* Full HD screens (Full HD and larger) */
+@media only screen and (min-width: 1600px) and (max-width: 1919px) {
+/* Your styles for full HD screens go here */
+}
+
+/* 2K and 4K screens (2K and 4K displays) */
+@media only screen and (min-width: 1920px) and (max-width: 3839px) {
+/* Your styles for 2K and 4K screens go here */
+}
+
+/* 5K and 8K screens (5K and 8K displays) */
+@media only screen and (min-width: 3840px) and (max-width: 7679px) {
+/* Your styles for 5K and 8K screens go here */
+}
+
+/* Ultra-high resolution screens (7680px and above) */
+@media only screen and (min-width: 7680px) {
+/* Your styles for ultra-high resolution screens go here */
+}
+
+
+
+
+
+
+/* by sakshi */
+/* media query for ipad mini  */
+/* @media only screen and (min-width: 576px) and (max-width: 767px) {
+  .content {
+    margin: 0 auto; /* Center content */
+    /*text-align: center; /* Center text within content */
+ /* }
+
+  .spacer {
+    height: 60px; /* Adjusted height for spacing */
+  /* }
+
+  .bottom {
+    padding: 20px;
+    margin: 0 10px; /* Adjusted margin for better alignment */
+    /* text-align: center; /* Center text within bottom */
+  /* } */
+
+  /* .bottom h1 {
+    margin-top: 2px; Adjusted margin for better spacing */
+  /* } */ 
+ 
+  
+/* }  */
+
+/* media query for i pad pro */
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
   body {
     overflow-x: hidden;
   }
@@ -258,56 +351,107 @@ button:hover {
   .content {
     margin-left: 40px;
   }
+
   .content h1 {
-    font-size: 3em;
+    font-size: 2.01em;
   }
+
   .spacer {
     height: 150px;
   }
+
   .row-cols-1 {
     margin-left: 50px !important;
   }
 
-  .bottomImg {
-    visibility: hidden;
+   /* .bottomImg {
+    visibility: visible;
+  }  */
+  /* .row-cols-1 {
+    margin-left: auto !important; /* Center row */
+    /* margin-right: auto !important;
+  } */
+  /* #faq h1{
+    font-size: 32px;
   }
+  #about h1{
+    font-size: 27px;
+
+  } */
+
+  .bottomImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bottom {
+    padding: 3px;
+    margin: 0 10px; /* Adjusted margin for better alignment */
+    text-align: center; /* Center text within bottom */
+  }
+
+   .bottom h1 {
+    margin-top: 20px; /* Adjusted margin for better spacing */
+   } 
+  .bottomImg {
+    visibility: visible;
+  } 
+  
 
   .bottom {
     height: 240px;
   }
 }
 
-/* Extra-large screens (Desktops and larger screens) */
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  /* Your styles for extra-large screens go here */
+/* media query for ipad air */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .content {
+    margin: 0 auto; /* Center content */
+    text-align: center; /* Center text within content */
+  }
+  
+  .content h1 {
+    font-size: 2rem; /* Adjusted font size */
+  }
+
+  .spacer {
+    height: 80px; /* Adjusted height for spacing */
+  }
+
+  .row-cols-1 {
+    margin-left: auto !important; /* Center row */
+    margin-right: auto !important;
+  }
+  #faq h1{
+    font-size: 32px;
+  }
+  #about h1{
+    font-size: 27px;
+
+  }
+
+  .bottomImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bottom {
+    padding: 3px;
+    margin: 0 10px; /* Adjusted margin for better alignment */
+    text-align: center; /* Center text within bottom */
+  }
+
+  .bottom h1 {
+    margin-top: 20px; /* Adjusted margin for better spacing */
+  }
+  .bottomImg {
+    visibility: visible;
+  } 
 }
 
-/* Wide screens (Large desktops) */
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  /* Your styles for wide screens go here */
-}
-
-/* Extra-wide screens (Extra-large desktops) */
-@media only screen and (min-width: 1400px) and (max-width: 1599px) {
-  /* Your styles for extra-wide screens go here */
-}
-
-/* Full HD screens (Full HD and larger) */
-@media only screen and (min-width: 1600px) and (max-width: 1919px) {
-  /* Your styles for full HD screens go here */
-}
-
-/* 2K and 4K screens (2K and 4K displays) */
-@media only screen and (min-width: 1920px) and (max-width: 3839px) {
-  /* Your styles for 2K and 4K screens go here */
-}
-
-/* 5K and 8K screens (5K and 8K displays) */
-@media only screen and (min-width: 3840px) and (max-width: 7679px) {
-  /* Your styles for 5K and 8K screens go here */
-}
-
-/* Ultra-high resolution screens (7680px and above) */
-@media only screen and (min-width: 7680px) {
-  /* Your styles for ultra-high resolution screens go here */
-}
