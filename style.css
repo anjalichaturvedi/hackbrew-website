@@ -238,10 +238,28 @@ button:hover {
   color: #141414;
 }
 
-/* Small screens (Mobile) */
-@media only screen and (max-width: 576px) {
- 
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
+/* Small screens (Mobile) */
+@media screen and (max-width: 576px) {
+ 
+.para{
+  max-width: 49rem !important;
+  text-align: justify !important;
+  border:1px solid red !important;
+}
+
+.phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 
 }
 
