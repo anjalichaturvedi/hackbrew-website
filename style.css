@@ -240,14 +240,72 @@ button:hover {
 
 /* Small screens (Mobile) */
 @media only screen and (max-width: 576px) {
- 
+  /* Adjust body overflow to prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
 
+  /* Adjust content margins for better readability */
+  .content {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
+  /* Increase font size for main headings */
+  .content h1 {
+    font-size: 2.5em;
+  }
+
+  /* Add space between sections */
+  .spacer {
+    height: 50px;
+  }
+
+  /* Adjust timer width and padding */
+  .timer {
+    width: 100%;
+    padding: 10px;
+  }
+
+  /* Adjust intro section margins and font size */
+  .intro {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .intro p {
+    font-size: 14px;
+  }
+
+  /* Adjust bottom section margins and font sizes */
+  .bottom {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .bottom h1 {
+    font-size: 24px;
+  }
+
+  .bottom h5 {
+    font-size: 16px;
+  }
+
+  /* Make bottom images responsive */
+  .bottomImg img {
+    width: 100%;
+  }
+
+  /* Adjust FAQ section margins */
+  .faq {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 /* Medium screens (Tablets) */
-@media only screen and (min-width: 577px) and (max-width: 767px) {
-  }
+@media only screen and (min-width: 577px) and (max-width: 767px) { */
+  /* }
 
 /* Large screens (Larger tablets and small desktops) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
