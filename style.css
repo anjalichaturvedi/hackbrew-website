@@ -268,13 +268,17 @@ button:hover {
 
 /* Small screens (Mobile) */
 @media only screen and (max-width: 576px) {
- 
-
+  .sponsor-feature img {
+    width: 40px !important;
+   }
 
 }
 
 /* Medium screens (Tablets) */
 @media only screen and (min-width: 577px) and (max-width: 767px) {
+  .sponsor-feature img {
+    width: 40px !important;
+   }
   }
 
 /* Large screens (Larger tablets and small desktops) */
@@ -303,6 +307,10 @@ button:hover {
   .bottom {
     height: 240px;
   }
+
+  .sponsor-feature img {
+    width: 110px !important;
+   }
 }
 
 /* Extra-large screens (Desktops and larger screens) */
