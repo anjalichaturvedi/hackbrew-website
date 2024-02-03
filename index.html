@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hack Brew</title>
+  <meta name="description" content="Default description">
+    <title id="pageTitle">Hack Brew</title>
     <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico">
@@ -13,6 +14,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <body>
   <nav class="navbar bg-transparent  ">
     <div class="container">
@@ -413,11 +415,34 @@
   
     <!-- Copyright -->
     <div class="text-center p-3">
+      <div class="icons">
+        <a href="https://www.linkedin.com/company/nodebrew/">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://twitter.com/nodebreww">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/nodebreww/?igsh=d3lqcDBhM2JmaW40">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
       2023-24  &copy;  Nodebrew
     </div>
     <!-- Copyright -->
   </footer>
 <script>
+
+  //Dynamic title/description for meta tags
+  var dynamicTitle = "HackBrew";
+  var dynamicDescription = "Hack Brew is Nodebrew's latest global online hackathon continuing our mission to advance women in tech. Taking place from Feb 23-25, 2024, 500+ women coders, designers and tech talents will innovate solutions over 3 days.";
+
+  document.getElementById("pageTitle").innerText = dynamicTitle;
+
+  var metaDescriptionTag = document.querySelector('meta[name="description"]');
+  if (metaDescriptionTag) {
+    metaDescriptionTag.setAttribute('content', dynamicDescription);
+  }
+
   // Set the date we're counting down to
   var countDownDate = new Date("Feb 23, 2024 10:00:00").getTime();
   

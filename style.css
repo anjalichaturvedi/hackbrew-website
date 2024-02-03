@@ -237,6 +237,14 @@ a:hover {
 button:hover {
   color: #141414;
 }
+.icons a{
+  font-size: 1.5em;
+  padding: 0.2em;
+}
+.icons a:hover{
+  color:white;
+  text-decoration: none;
+}
 
 /* Small screens (Mobile) */
 @media only screen and (max-width: 576px) {
